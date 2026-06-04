@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pre-flight check">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#19C37D"/>
+      <stop offset="1" stop-color="#37E0A6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#19C37D" opacity="0.12"/>
+  <rect x="15" y="13" width="34" height="40" rx="6" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <rect x="26" y="9" width="12" height="8" rx="3" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <path d="M22 26 l3 3 5 -6" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 36 l3 3 5 -6" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 26 H43 M35 36 H43 M22 46 H43" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+</svg>
