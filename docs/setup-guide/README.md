@@ -14,15 +14,31 @@
 
 In the workshop we'll build a tiny web app that talks to an AI model running **entirely on your own laptop**. No cloud, no API keys, no accounts.
 
-To keep the 30 minutes moving, please install everything below **before you arrive** and run the 2-minute check at the end. You don't need to write any code beforehand — we'll do that together.
+To keep the 30 minutes moving, please get set up **before you arrive**: watch the walkthrough video first, then complete the steps and run the 2-minute check at the end. You don't need to write any code beforehand — we'll do that together.
 
 > [!WARNING]
 > **Download the model at home, on good wifi.** The model is a few GB. Venue wifi will **not** handle 50 people downloading models at once — so get it done before Saturday.
 
+---
+
+## <img src="assets/icon-resources.svg" height="30" alt=""> Watch this first
+
+> [!IMPORTANT]
+> **Start here — this video is required, not optional.** It's the most complete walkthrough of everything you need: it covers **installing Git**, creating the **accounts** you'll use, and the extra **configuration** the quick steps below don't spell out. **Watch it all the way through first**, then come back and run through Steps 1–4 and the pre-flight check.
+
+<div align="center">
+
+[![Every Account and Tool You Need to Start Building with AI](https://img.youtube.com/vi/izi-qO9m_LE/maxresdefault.jpg)](https://youtu.be/izi-qO9m_LE)
+
+**▶ [Every Account and Tool You Need to Start Building with AI](https://youtu.be/izi-qO9m_LE)**
+
+</div>
+
 ### What you'll set up
 
-| | Step | What it does |
+| | Before Saturday | Why it matters |
 |:---:|---|---|
+| **▶** | [Watch the walkthrough](#watch-this-first) — **required, first** | Full setup: Git, accounts & configuration |
 | **1** | [Install Ollama](#step-1-install-ollama) | Runs the AI model |
 | **2** | [Download a model](#step-2-download-a-model) | The brain — *do this at home* |
 | **3** | [Install Node.js](#step-3-install-nodejs) | Runs the web app |
@@ -111,20 +127,23 @@ If you don't already have one, install **VS Code** from [code.visualstudio.com](
 
 ## <img src="assets/icon-preflight.svg" height="30" alt=""> Pre-flight check
 
-Run this the **night before**. All three commands should return something, not an error:
+Run this the **night before**. Each command should return something, not an error:
 
 ```bash
+git --version
 ollama --version
 node --version
 ollama run qwen3.5:4b "say hi"
 ```
 
-*(Swap `qwen3.5:4b` for whichever model you pulled.)*
+*(Swap `qwen3.5:4b` for whichever model you pulled. The walkthrough video shows how to install Git if `git --version` errors.)*
 
 Then open your web browser and go to **<http://localhost:11434>** — it should say **"Ollama is running."** That confirms the app will be able to reach the model.
 
 **Tick these off before Saturday:**
 
+- [ ] I watched the [walkthrough video](#watch-this-first) all the way through
+- [ ] `git --version` returns a version number
 - [ ] `ollama --version` returns a version number
 - [ ] `node --version` returns **v20 or higher**
 - [ ] `ollama run <your-model> "say hi"` gets a reply
@@ -132,23 +151,11 @@ Then open your web browser and go to **<http://localhost:11434>** — it should 
 
 ---
 
-## <img src="assets/icon-resources.svg" height="30" alt=""> Helpful resources (optional)
+## <img src="assets/icon-read.svg" height="30" alt=""> Further reading (optional)
 
-New to this, or want a head start? These two will get you oriented.
-
-<div align="center">
-
-#### ▶ Watch · 5 min
-
-[![Every Account and Tool You Need to Start Building with AI](https://img.youtube.com/vi/izi-qO9m_LE/hqdefault.jpg)](https://youtu.be/izi-qO9m_LE)
-
-**[Every Account and Tool You Need to Start Building with AI](https://youtu.be/izi-qO9m_LE)**
-
-</div>
+Want a head start before the video? This short article walks through the same first steps in writing.
 
 <div align="center">
-
-#### 📖 Read · the article
 
 <a href="https://open.substack.com/pub/theoyinbooke/p/run-it"><img src="https://substackcdn.com/image/fetch/$s_!6nBO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcfc50749-a8e5-4716-8e71-de61b548117e_2468x1424.png" width="560" alt="Run it — article cover" /></a>
 
